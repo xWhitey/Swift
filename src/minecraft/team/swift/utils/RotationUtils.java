@@ -6,7 +6,7 @@ import net.minecraft.network.play.client.CPacketPlayer;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 
-/* Created bu katch & xWhitey on 05.05.2021 */
+/* Created by katch & xWhitey on 05.05.2021 */
 public class RotationUtils {
     private static final Minecraft mc = Minecraft.getMinecraft();
 
