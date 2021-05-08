@@ -11,17 +11,10 @@ import team.swift.settings.Setting;
 
 /* Created by xWhitey on 05.05.2021 */
 public class NoFall extends Module {
-    public Setting<String> mode = new Setting<String>("Mode", "Mode", this, "Packet", "Packet", "GroundSpoof");
+    public Setting<String> mode = new Setting<String>("Mode", "Mode", this, "Packet", "Packet");
 
     public NoFall() {
         super("NoFall", ModuleCategory.PLAYER, Keyboard.KEY_N);
-    }
-
-    @EventTarget
-    public void onSendPacket(SendPacketEvent event) {
-        if (event.getPacket() instanceof CPacketPlayer) {
-            System.out.println(((CPacketPlayer) event.getPacket()).isOnGround());
-        }
     }
 
     @EventTarget
